@@ -4,13 +4,13 @@ import pandas as pd
 #! INPUT NECESSARY DATA
 
 #? Get total number of nodes
-df = pd.read_csv("node_xy.csv")
+df = pd.read_csv("nodesxy.csv")
 nodes_xy = df.iloc[:,1:].to_numpy(dtype=float)
 N = nodes_xy.shape[0]
 print("Total number of nodes: ", N)
 
 #? Get total number of elements
-df = pd.read_csv("elements.csv")
+df = pd.read_csv("elementss.csv")
 elements_index = df.iloc[:,1:].to_numpy(dtype=int)
 M = elements_index.shape[0]
 print("Total number of elements: ", M)
